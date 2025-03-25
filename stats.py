@@ -20,8 +20,6 @@ def character_repeat(text):
 def output_result(text):
     out_num_words = get_word_count(text)
 
-    print(f"============ BOOKBOT ============\nAnalyzing book found at books/frankenstein.txt...\n----------- Word Count ----------\nFound {out_num_words} total words\n--------- Character Count -------")
-
     out_characters = character_repeat(text)
     #sort dictionary by using object view of dictionary items()
     sorted_characters = sorted(out_characters.items(), key=lambda x: x[1], reverse=True)
